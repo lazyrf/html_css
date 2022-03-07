@@ -40,11 +40,56 @@
         margin: 40px;
 
         /* FLEXBOX */
+        display: flex;
+        /* Vertically aligned */
+        align-items: center;
+        /* align-items: stretch; */  /* Default */
+        /* align-items: flex-start; */
+        /* align-items: flex-end; */
+
+        /* Horizontally aligned */
+        justify-content: center;
+        /* justify-content: space-between; */
+
+        /* Create gap between items */
+        gap: 10px;
+      }
+
+      .el {
+          /* Use gap property of container instead */
+          /* margin- right: 30px; */
+          /* Default
+          flex-grow: 0;
+          flex-shrink: 1;
+          flex-basis: auto;
+          */
+          /* flex-basis: 200px; */
+          flex-shrink: 0;
+          /* flex-grow: 1; */
+
+          flex: 0 0 200px;
+      }
+
+      .el--1 {
+          align-self: flex-start;
+          /* order: 2; */
+          /* flex-grow: 3; */
+      }
+
+      .el--5 {
+          align-self: stretch;
+          order: 1;
+      }
+
+      .el--6 {
+          order: -1;
       }
     </style>
   </head>
   <body>
+    <!-- flex container -->
     <div class="container">
+      <!-- flex items -->
       <div class="el el--1">HTML</div>
       <div class="el el--2">and</div>
       <div class="el el--3">CSS</div>
