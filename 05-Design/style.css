@@ -94,6 +94,7 @@ h1 {
   font-size: 44px;
   line-height: 1.1;
   letter-spacing: -1px;
+  /* text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); */
 }
 
 .header-text {
@@ -108,6 +109,10 @@ img {
 
 /* FEATURES */
 .features-icon {
+    stroke: #087f5b;
+    height: 32px;
+    width: 32px;
+    margin-bottom: 16px;
 }
 
 .features-title {
@@ -145,6 +150,17 @@ img {
 }
 
 /* CHAIRS */
+.chair {
+    /* h-shadow v-shadow blur spread color inset; */
+    /* h-shadow：水平位移距離 */
+    /* v-shadow：垂直位移距離 */
+    /* blur：模糊半徑 */
+    /* spread：擴散距離 */
+    /* color：顏色 */
+    /* inset：內陰影 */
+    box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.07);
+}
+
 .chair-box {
   padding: 24px;
 }
@@ -171,6 +187,9 @@ h3 {
 }
 
 .chair-icon {
+    stroke: #087f5b;
+    width: 24px;
+    height: 24px;
 }
 
 .chair-price {
